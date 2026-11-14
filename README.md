@@ -4,7 +4,7 @@
 
 ## About my project
 
-I've been looking through job postings while applying for internships, and I noticed that every company lists skills, experience, salary, and remote work details differently. For this assignment, I wanted to see if I could fine-tune a small language model to pull out those details in the same format each time.
+I have been looking through job postings while applying for internships, and I noticed that every company lists skills, experience, salary, and remote work details differently. For this assignment, I wanted to see if I could fine-tune a small language model to pull out those details in the same format each time.
 
 I used **Qwen2.5-0.5B-Instruct** with **LoRA**. The goal was to extract a job title, required technical skills, minimum years of experience, remote status, and minimum and maximum salary as JSON.
 
@@ -49,6 +49,6 @@ Since I only tested on 10 synthetic examples, I wouldn't assume these results ap
 
 To review the experiment, open the notebook in Google Colab. A T4 GPU is needed to rerun the training cells. The notebook includes my original dependency troubleshooting and runtime-restart steps, so **don't click Run all without reviewing those cells first**.
 
-The individual fine-tuned predictions and LoRA adapter weights are not included in this upload. Their results are visible in the notebook outputs. If I add the saved prediction file or adapter ZIP later, I'll upload the actual files from Colab.
+The fine-tuned model's results are included in my Colab notebook, including the overall accuracy, accuracy for each field, and previews of the model's responses. I wasn't able to save the adapter weights before my Colab session ended, so I've included the results from my experiment instead.
 
 *AI-use note: I used AI assistance while organizing the project and improving some explanations. I ran the Colab experiment and reviewed the results myself.*
